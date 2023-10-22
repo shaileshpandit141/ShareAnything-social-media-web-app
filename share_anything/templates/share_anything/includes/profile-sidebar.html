@@ -1,0 +1,30 @@
+<div id="sideBar" class="profile--side--bar">
+    <!-- || Profile Background Image -->
+    <figure class="bg-img-cont">
+        <img src="{{ loginUser.profile_bg_picture.url }}"  alt="">
+    </figure>
+    <div class="touch--overflow">
+        <div class="user--profile--info--cont">
+            <!-- || Profile Image  -->
+            <figure class="user--profile--img--cont">
+                <img src="{{ loginUser.profile_picture.url }}"  alt="">
+            </figure>
+            
+            <button id="crossBtn" class="cross--btn">
+                <p>&#10005</p>
+            </button>
+
+            <div class="action--btns">
+                <div class="touch--overflow">
+                    <a href="">View</a>
+                </div>
+                <div class="touch--overflow">
+                    <a href="{% url "sign-out-page" %}">Log out</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- || Othere Btns  -->
+
+    </div>
+</div>

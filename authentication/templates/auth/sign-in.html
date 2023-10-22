@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Login{% endblock title %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "auth/css/login.css" %}">
+{% endblock style %}
+
+{% block content %}
+    <div class="sign--in--cont">
+        <div class="inner--cont">
+            <h1>Sign in Your account</h1>
+            <form action="" method='post'>
+                {% csrf_token %}
+                <div class="inputs">
+                    {{ form }}
+                </div>
+                <button class="sign--in--btn">Sign in</button>
+            </form>
+            <h4>Don't have an account? <a href="{% url "sign-up-page" %}">Create one now</a></h4>
+        </div>
+    </div>
+{% endblock content %}

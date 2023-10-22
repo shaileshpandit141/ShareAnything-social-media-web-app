@@ -1,0 +1,54 @@
+{% load static %}
+<header class="header">
+
+    <nav class="nav">
+
+        <!-- || Logo and Search Container -->
+        <div class="left--cont">
+            <figure class="logo--cont">
+                <img src="{% static "share_anything/media/logo.svg" %}" alt="">
+            </figure>
+            <input type="search" placeholder="search">
+        </div>
+
+        <!-- || Header Links -->
+        <div class="links--cont">
+            <div class="link--cont">
+                <a href="">
+                    <img src="{% static "share_anything/media/home.svg" %}" alt="">
+                    
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="link--cont">
+                <a href="">
+                    <img src="{% static "share_anything/media/vector.svg" %}" alt="">
+                    <p>Users</p>
+                </a>
+            </div>
+            <div class="link--cont">
+                <a href="">
+                    <img src="{% static "share_anything/media/chat.svg" %}" alt="">
+                    <p>Messaging</p>
+                </a>
+            </div>
+            <div class="link--cont">
+                <a href="">
+                    <img src="{% static "share_anything/media/circle_notifications.svg" %}" alt="">
+                    <p>notifications</p>
+                </a>
+            </div>
+
+            <!-- || User Profile Link img -->
+            <div class="user--profile--link">
+                <a href="" id="userProfileBtn">
+                    <figure class="profile--img">
+                        {% comment %} <img src="{% static "share_anything/media/profile-img.jpg" %}"  alt=""> {% endcomment %}
+                        <img src="{{ loginUser.profile_picture.url }}"  alt="">
+                    </figure>
+                    <!-- <p>You</p> -->
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>

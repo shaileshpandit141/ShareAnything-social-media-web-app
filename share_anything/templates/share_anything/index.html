@@ -1,0 +1,56 @@
+{% extends "share_anything/base/base.html" %}
+{% load static %}
+
+{% block title %}Share anything ...{% endblock title %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "share_anything/css/index.css" %}">
+<link rel="stylesheet" href="{% static "share_anything/css/header.css" %}">
+<link rel="stylesheet" href="{% static "share_anything/css/middel-grid.css" %}">
+<link rel="stylesheet" href="{% static "share_anything/css/left-grid.css" %}">
+<link rel="stylesheet" href="{% static "share_anything/css/profile-sidebar.css" %}">
+{% endblock styles %}
+
+{% block content %}
+
+
+<main id="root">
+    
+    <!-- || Header Container-->
+    <section class="section--1">
+        {% include "share_anything/includes/header.html" %}
+    </section>
+    
+    {% include "share_anything/includes/profile-sidebar.html" %}
+        
+
+    <section class="section--2">
+        <main class="content--cont">
+            <div class="left--grid">
+                {% include "share_anything/includes/user-profile-card.html" %}
+            </div>
+
+            <!-- || Post Area Container-->
+            <div id="middel--grid" class="middel--grid">
+
+                <!-- || Post Card -->
+                {% for post in posts %}
+                    {% include "share_anything/includes/post-card.html" %}
+                {% endfor %}
+
+            </div>
+
+            <div class="right--grid">
+                R
+            </div>
+        </main>
+    </section>
+
+</main>
+{% endblock content %}
+
+{% block script %}
+<script defer src="{% static "share_anything/js/script.js" %}"></script>
+<script defer src="{% static "share_anything/js/profile-sidebar.js" %}"></script>
+{% endblock script %}
+

@@ -1,0 +1,65 @@
+/* || Roboto Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* || Poppins Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* || RESET */
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* || CSS Font Size Variables */
+:root {
+
+    /* | For Display Text  */
+    --DISPLAY--SIZE: 4rem;	/* 64px */
+    --DISPLAY--LINE--HEIGHT: 44px;
+
+    /* | For Heading Text  */
+    --HEADING--SIZE: 2.813rem;	/* 45px */
+    --HEADING--LINE--HEIGHT: 36px;
+
+    /* | For Title Text  */
+    --TITLE--SIZE: 1.25rem;	/* 20px */
+    --TITLE--LINE--HEIGHT: 24px;
+    --TITLE--LETTER--SPACING: 0.15px;
+
+    /* | For Label Text  */
+    --LABLE--SIZE: 1.125rem;	/* 18px */
+    --LABEL--LINE--HEIGHT: 16px;
+    --LABEL--LETTER--SPACING: 0.5px;
+
+    /* | For Body Text  */
+    --BODY--M--SIZE: 0.875rem;		/* 14px */
+    --BODY--M--LINE-HEIGHT: 20px;
+    --BODY--M--LETTER--SPACING: 0.25px;
+
+    /* | For Small Body Text  */
+    --BODY--S--SIZE: 12px;		/* 14px */
+    --BODY--S--LINE-HEIGHT: 18px;
+    --BODY--S--LETTER--SPACING: 0.15px;
+    
+}
+
+
+input,
+button {
+    font-family: "Roboto", Arial, Helvetica, sans-serif ;
+}
+
+/* || Body  */
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif ;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}

@@ -1,0 +1,136 @@
+/* || Roboto Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* || Poppins Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* || RESET */
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* || Body  */
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif ;
+    font-size: 1rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+button {
+    font-family: "Roboto", Arial, Helvetica, sans-serif ;
+}
+
+/* || Main Container Styles */
+.main--cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* || Sign in page styles */
+.sign--in--cont {
+    width: 92%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign--in--cont .inner--cont {
+    width: 100%;
+    max-width: 400px;
+}
+
+.inner--cont h1 {
+    /* color: #4d4d44; */
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.inner--cont form {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.inner--cont .inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.inner--cont .inputs input {
+    outline: none;
+    font-size: 1rem;
+    padding: .8rem 1rem;
+}
+
+
+.inner--cont .inputs #id_username {
+    border: 1.5px solid #0000004d;
+    border-radius: .5rem;
+}
+
+.inner--cont .inputs #id_password {
+    border: 1.5px solid #0000004d;
+    border-radius: .5rem;
+}
+
+.inner--cont .inputs #id_password1 {
+    border: 1.5px solid #0000004d;
+    border-radius: .5rem;
+}
+
+.inner--cont .inputs #id_password2 {
+    border: 1.5px solid #0000004d;
+    border-radius: .5rem;
+}
+
+form .sign--in--btn {
+    margin-top: 1.5rem;
+    border: none;
+    color: #FF8C38;
+    background-color: #e4e4ff;
+    font-size: 1rem;
+    width: 100%;
+    height: 50px;
+    border-radius: .5rem;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+form .sign--in--btn:active,
+form .sign--in--btn:focus,
+form .sign--in--btn:hover {
+    opacity: .9;
+}
+
+.inner--cont h4 {
+    color: #4d4d44;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.inner--cont h4 a {
+    text-decoration: none;
+    color: #ff6a00;
+    transition: border 0.3s ease;
+}
+
+.inner--cont h4 a:active,
+.inner--cont h4 a:focus,
+.inner--cont h4 a:hover {
+    border-bottom: 1.5px solid #ff6a00;
+}

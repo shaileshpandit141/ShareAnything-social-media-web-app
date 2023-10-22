@@ -1,0 +1,28 @@
+<!-- || Profile Card -->
+<div class="user--profile--cont">
+
+    <!-- || Profile Background Image -->
+    <figure class="bg-img-cont">
+        <img src="{{ loginUser.profile_bg_picture.url }}"  alt="">
+    </figure>
+    <div class="touch--overflow">
+        <a href="" class="user--profile--info--cont">
+            <!-- || Profile Image  -->
+            <figure class="user--profile--img--cont">
+                <img src="{{ loginUser.profile_picture.url }}"  alt="">
+            </figure>
+
+            <!-- || User Name  -->
+            <!-- <h3>Username</h3> -->
+            <h3>@{{ request.user | title }}</h3>
+        </a>
+
+        <!-- || User Bio Text  -->
+        <div class="bio--text--cont">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima enim ex id nulla
+                quos asperiores molestias commodi harum dolorum quae.
+            </p>
+        </div>
+    </div>
+</div>

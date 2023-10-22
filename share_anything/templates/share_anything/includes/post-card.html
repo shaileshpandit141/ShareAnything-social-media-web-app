@@ -1,0 +1,158 @@
+{% load static %}
+
+<!-- || Post Card -->
+<div class="post--cont">
+    <div class="post--header">
+        <div class="touch--overflow">
+            <a href="" class="post--user--info">
+                <figure class="user--img--cont">
+                    <img src="{% static "share_anything/media/user-1.png" %}" alt="">
+                </figure>
+                <div class="text--cont">
+                    <h3>@{{ request.user | title }}</h3>
+                    <p>200 Followers</p>
+                    <p>8 minutes ago</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- || Follow Btn  -->
+        <div class="touch--overflow">
+            <a href="" class="follow--btn">
+                <span>&plus;</span>
+                <span>Follow</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- || Post Description text  -->
+    <div class="post--discription--cont">
+        <p class="discription">
+            {{ post.discription_text }}
+            <a href="">..see more</a>
+        </p>
+    </div>
+
+    {% if 'null' not in post.image.url %}
+        <!-- || Post Content  -->
+        <div class="post--content--cont">
+            <img src="{{ post.image.url }}" alt="">
+        </div>
+
+    {% elif 'null' not in post.code_text %}
+        <!-- || Post Code Text Content  -->
+        <div class="code--text--cont">
+            {{ post.code_text | markdown | safe }}
+        </div>
+
+        <!-- || Content Option btn  -->
+        <div class="option--btn--cont">
+            <div class="touch--overflow">
+                <a href="" class="option--btn">
+                    <span>Options</span>
+                    <img src="{% static "share_anything/media/angle-small-down.svg" %}" alt="" width="24px" class="option--btn--icon">
+                </a>
+            </div>
+        </div>
+
+        <!-- || Content options -->
+        <div class="options--cont">
+            <div class="option--status--cont">
+                <span>Option A</span>
+                <span>50%</span>
+            </div>
+            <div class="option--status--cont">
+                <span>Option B</span>
+                <span>50%</span>
+            </div>
+            <div class="option--status--cont">
+                <span>Option C</span>
+                <span>50%</span>
+            </div>
+            <div class="option--status--cont">
+                <span>Option D</span>
+                <span>50%</span>
+            </div>
+        </div>
+
+    {% endif %}
+
+    <!-- || Like, Comment and Share count/status components  -->
+    <div class="likes--comment--share--cont">
+        <div class="left--likes--cont">
+            <div class="touch--overflow">
+                <a href="" class="likes--count--cont">
+                    <div class="user--1"></div>
+                    <div class="user--2"></div>
+                    <div class="user--3"></div>
+                    <div class="likes--count">
+                        <p>200 Likes</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- || Right and Comment Share Status  -->
+        <div class="right--comment--share--cont">
+            <div class="touch--overflow">
+                <a href="" class="comment--share-link">
+                    <span>500 Comments</span>
+                    <span>&bull;</span>
+                    <span>20 Shares</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- || Like, Comment and Share btn container  -->
+    <div class="action--btns--cont">
+
+        <!-- || Like Btn  -->
+        <div class="like--cont">
+            <div class="touch--overflow">
+                <a href="" class="btn">
+                    <img src="{% static "share_anything/media/thumb_up.svg" %}" alt="">
+                    <span>Like</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- || Comment btn  -->
+        <div class="comment--cont">
+            <div class="touch--overflow">
+                <a href="" class="comment--btn btn">
+                    <img src="{% static "share_anything/media/comment.svg" %}" alt="">
+                    <span>Comment</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- || Share btn  -->
+        <div class="share--cont">
+            <div class="touch--overflow">
+                <a href="" class="btn">
+                    <img src="{% static "share_anything/media/send.svg" %}" alt="">
+                    <span>Share</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- || Drop Your Comment Component  -->
+    <div class="comment--component comment--area">
+        <div class="comment--user--info">
+            <figure class="user--img--cont">
+                <img src="{% static "share_anything/media/profile-img.jpg" %}"  alt="">
+            </figure>
+            <input type="text" placeholder="Drop your comment...">
+            <div class="touch--overflow">
+                <a href="" class="send--btn">
+                    <img src="{% static "share_anything/media/send.svg" %}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
