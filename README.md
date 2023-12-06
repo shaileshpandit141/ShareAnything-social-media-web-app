@@ -1,4 +1,4 @@
-# ShareAnything Social Media Web App (`Work on development is going on.`)
+# ShareAnything Social Media Web App (*Work on development is going on.*)
 
 ### Overview
 
